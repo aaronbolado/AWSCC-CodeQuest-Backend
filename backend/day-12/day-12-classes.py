@@ -12,6 +12,8 @@ student1 = Student("Juan Dela Cruz", 20, True, [], [])
 print(f"Name: {student1.name}")
 print(f"Age: {student1.age}")
 print(f"Status: {'Enrolled' if student1.is_enrolled else 'Not Enrolled Yet'}")
+student1.classes.append('Math')
+student1.classes.append('Science')
 print(f"Classes: {student1.classes}")
 print(f"Offenses: {student1.offenses}")
 
