@@ -1,12 +1,14 @@
 {
     "yt": [
         {
-            "email": "clarence",
-            "password": "432432432"
-        },
-        {
             "email": "xian",
-            "password": "sadsadsadsadsa343432432"
+            "password": "anotherOne"
+        }
+    ],
+    "Twitch": [
+        {
+            "email": "aaronjohnbolado@gmail.com",
+            "password": "password123"
         }
     ]
 }
