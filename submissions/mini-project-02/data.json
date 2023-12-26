@@ -1,0 +1,20 @@
+{
+    "yt": [
+        {
+            "email": "xian",
+            "password": "1231312313123123123"
+        }
+    ],
+    "Twitch": [
+        {
+            "email": "aaronjohnbolado@gmail.com",
+            "password": "password123"
+        }
+    ],
+    "Facebook": [
+        {
+            "email": "messenger@gmail.com",
+            "password": "12345678"
+        }
+    ]
+}
