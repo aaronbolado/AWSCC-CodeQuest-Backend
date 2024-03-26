@@ -1,6 +1,6 @@
 import requests
 
-# API endpoint (example using JSONPlaceholder API)
+# API endpoint (example using JSONPlaceholder API) done
 api_url = "https://jsonplaceholder.typicode.com/posts/1"
 
 # Sending a GET request
