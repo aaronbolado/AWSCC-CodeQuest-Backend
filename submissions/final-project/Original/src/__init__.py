@@ -10,7 +10,7 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     db.init_app(app)
 
-    from .model import Book
+    from .model import PasswordEntry
     if not path.exists("../instance/" + DB_NAME):
         with app.app_context():
             db.create_all()

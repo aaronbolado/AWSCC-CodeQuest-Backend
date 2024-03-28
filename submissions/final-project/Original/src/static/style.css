@@ -5,6 +5,13 @@ body {
     padding: 20px;
 }
 
+#title {
+    font-size: 28px;
+    color: #2F2F2F;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 h1 {
     font-size: 28px;
     color: #2F2F2F;
