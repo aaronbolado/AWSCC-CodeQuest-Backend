@@ -38,7 +38,7 @@ def check_input(_input):
         running = False
 
 def is_existing(website):
-    with open('submissions\mini-project-02\data.json', 'r') as f:
+    with open('submissions\\mini-project-02\\data.json', 'r') as f:
         data = json.load(f)
         if website in data:
             return True
@@ -56,7 +56,7 @@ def add():
         }]
     }
 
-    with open('submissions\mini-project-02\data.json', 'r') as f:
+    with open('submissions\\mini-project-02\\data.json', 'r') as f:
         data = json.load(f)
     
     if website in data:
@@ -64,7 +64,7 @@ def add():
     else:
         data.update(new_data)
 
-    with open('submissions\mini-project-02\data.json', 'w') as f:
+    with open('submissions\\mini-project-02\\data.json', 'w') as f:
         json.dump(data, f, indent=4)
 
     os.system('cls')
@@ -72,7 +72,7 @@ def add():
     
 def view():
     os.system('cls')
-    with open('submissions\mini-project-02\data.json', 'r') as f:
+    with open('submissions\\mini-project-02\\data.json', 'r') as f:
         data = json.load(f)
         for key, val in data.items():
             print(f"Website: {key}")
@@ -81,7 +81,7 @@ def view():
                 print(f"    Password: {val[i]['password']}\n")
 
 def search(website):
-    with open('submissions\mini-project-02\data.json', 'r') as f:
+    with open('submissions\\mini-project-02\\data.json', 'r') as f:
         data = json.load(f)
         for key, val in data.items():
             if key == website:
@@ -95,7 +95,7 @@ def search(website):
         return 
     
 def delete(website):
-    with open('submissions\mini-project-02\data.json', 'r') as f:
+    with open('submissions\\mini-project-02\\data.json', 'r') as f:
         data = json.load(f)
         search(website)
 
@@ -109,13 +109,13 @@ def delete(website):
         if len(data[website]) == 0:
             data.pop(website)
 
-    with open('submissions\mini-project-02\data.json', 'w') as f:
+    with open('submissions\\mini-project-02\\data.json', 'w') as f:
         json.dump(data, f, indent=4)
 
     print("Successfully removed.")
 
 def update(website):
-    with open('submissions\mini-project-02\data.json', 'r') as f:
+    with open('submissions\\mini-project-02\\data.json', 'r') as f:
         data = json.load(f)
         search(website)
 
@@ -128,7 +128,7 @@ def update(website):
         new_val = input(f"Enter your new {to_update}: ")
         data[website][num-1][to_update] = new_val
 
-    with open('submissions\mini-project-02\data.json', 'w') as f:
+    with open('submissions\\mini-project-02\\data.json', 'w') as f:
         json.dump(data, f, indent=4)
 
     print("Successfully updated!")
