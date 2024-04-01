@@ -2,7 +2,7 @@ const updateBtns = document.querySelectorAll(".update-btn");
 const deleteBtns = document.querySelectorAll(".delete-btn");
 const updateEntryBtn = document.getElementById("updateEntryBtn");
 
-// update book details
+// update password details
 const updateWebsite = document.getElementById("updateWebsite");
 const updateEmail = document.getElementById("updateEmail");
 const updatePassword = document.getElementById("updatePassword");
